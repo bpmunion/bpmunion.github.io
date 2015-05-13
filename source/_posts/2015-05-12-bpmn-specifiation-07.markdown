@@ -33,8 +33,9 @@ This specification provides a notation and model for Business Processes and an i
   
 The BPMN 2.0 specification extends the scope and capabilities of the BPMN 1.2 in several areas:  
    + Formalizes the execution semantics for all BPMN elements   + Defines an extensibility mechanism for both Process model extensions and graphical extensions   + Refines Event composition and correlation   + Extends the definition of human interactions   + Defines a Choreography model  This specification also resolves known BPMN 1.2 inconsistencies and ambiguities.  
+  
 >BPMN2.0规范在以下领域的范围和能力上对BPMN1.2规范进行了扩展：  
-
+  
   >+ 将针对所有BPMN元素的执行语义正式化  
   >+ 为过程模型扩展和图形扩展定义一个可扩展机制  
   >+ 精化事件的组成和关联  
