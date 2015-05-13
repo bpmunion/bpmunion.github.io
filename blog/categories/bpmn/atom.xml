@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[BPM's Blog]]></title>
-  <link href="http://bpmunion.github.io/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Bpmn | BPM's Blog]]></title>
+  <link href="http://bpmunion.github.io/blog/categories/bpmn/atom.xml" rel="self"/>
   <link href="http://bpmunion.github.io/"/>
   <updated>2015-05-13T08:08:57+08:00</updated>
   <id>http://bpmunion.github.io/</id>
