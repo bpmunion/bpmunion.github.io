@@ -4,7 +4,7 @@
   <title><![CDATA[BPM's Blog]]></title>
   <link href="http://bpmunion.github.io/atom.xml" rel="self"/>
   <link href="http://bpmunion.github.io/"/>
-  <updated>2015-05-13T23:31:49+08:00</updated>
+  <updated>2015-05-19T23:19:29+08:00</updated>
   <id>http://bpmunion.github.io/</id>
   <author>
     <name><![CDATA[bpmunion]]></name>
@@ -135,6 +135,8 @@
 Figure 7.1 - Example of a private Business Process</p>
 
 <blockquote><p>图7.1-一个私有业务流程示例</p></blockquote>
+
+<p>(img left /images/Example of a private Business Process.png 350 350 &lsquo;image&rsquo; &lsquo;images&rsquo;)</p>
 ]]></content>
   </entry>
   
