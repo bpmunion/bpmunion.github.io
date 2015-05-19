@@ -96,14 +96,30 @@ Private Business Processes are those internal to a specific organization. These 
 If a swimlanes-like notation is used (e.g., a Collaboration, see below) then a private Business Process will be contained within a single Pool. The Process flow is therefore contained within the Pool and cannot cross the boundaries of the Pool. The flow of Messages can cross the Pool boundary to show the interactions that exist between separate private Business Processes.  
 >如果一个类似泳道的标注（例如一个写作，见下文）被使用，那么一个私有业务流程将会包含在一个单个泳池中。该流程流也因此包含在该泳池中并且不能穿过泳池的边界。消息流可以穿过泳池边界来展示存在于分开的私有业务流程之间的写作。  
   
-![alt text](img/Example of a private Business Process.png)   
+![image](/images/Example of a private Business Process.png)
+   
 Figure 7.1 - Example of a private Business Process  
 >图7.1-一个私有业务流程示例  
 
+**Public Processes**
+>公用流程   
  
-
+A public Process represents the interactions between a private Business Process and another Process or Participant (see Figure 7.2). Only those Activities that are used to communicate to the other Participant(s) are included in the public Process. All other “internal” Activities of the private Business Process are not shown in the public Process. Thus, the public Process shows to the outside world the Message Flows and the order of those Message Flows that are needed to interact with that Process. Public Processes can be modeled separately or within a Collaboration to show the flow of Messages between the public Process Activities and other Participants. Note that the public type of Process was named “abstract” in BPMN 1.2.
+>一个公用流程代表一个私有业务流程和另一个流程或一个参与者之间的交互（请见图7.2）。只有这些将消息传递给其他参与者的活动才包含在公用流程中。私有业务流程的所有其他内部活动都不在公用流程中展示。因此公用流程将消息流和需要与那个流程交互的那些消息流的顺序展示给外界。公用流程可以单独建模或在协作范围内建模，以便展示公用流程活动和其他参与者之间的消息流。请注意在业务流程建模标注1.2里将流程公用类型命名为概要（“abstract”）。
+
+![image](/images/Example of a public Process.png)  
+Figure 7.2 - Example of a public Process
+>图7.2-一个公用流程的示例  
+
+**Collaborations**  
+>协作  
   
-  
+A Collaboration depicts the interactions between two or more business entities. A Collaboration usually contains two or more Pools, representing the Participants in the Collaboration. The Message exchange between the Participants is shown by a Message Flow that connects two Pools (or the objects within the Pools). The Messages associated with the Message Flows can also be shown. The Collaboration can be shown as two or more public Processes communicating with each other (see Figure 7.3). With a public Process, the Activities for the Collaboration participants can be considered the “touch-points” between the participants. The corresponding internal (executable) Processes are likely to have much more Activity and detail than what is shown in the public Processes. Or a Pool MAY be empty, a “black box.” Choreographies MAY be shown “in between” the Pools as they bisect the Message Flows between the Pools. All combinations of Pools, Processes, and a Choreography are allowed in a Collaboration.   
+>协作描述了两个或多个业务实体间的交互。一个实体通常包含两个或多个泳池来代表协作中的参与者。用一条连接两个泳池（或者泳池内的对象）消息流来展示参与者间的信息交换。与消息流关联的消息也可以被展示。该协作可以被展示为两个或多个彼此沟通的公用流程（请见图7.3）。就公用流程来说，协作参与者的活动可以认为是两个参与者之间的接触点。对应内部（可执行）流程具有的活动和细节可能比展示在公用流程中的更多。一个泳池可能是空的，即黑匣子。编舞可能被展示在泳池之间好像将泳池之间的消息流对截一样。在协作中泳池、流程和编舞的所有合并是被允许的。  
+
+![image](/images/An example of a Collaborative Process.png)   
+Figure 7.3 - An example of a Collaborative Process  
+>图7.3 一个协作流程的例子
 
 
 
