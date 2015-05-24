@@ -36,13 +36,13 @@ The BPMN 2.0 specification extends the scope and capabilities of the BPMN 1.2 in
   
 >BPMN2.0规范在以下领域的范围和能力上对BPMN1.2规范进行了扩展：  
   
-  >+ 将针对所有BPMN元素的执行语义正式化  
-  >+ 为过程模型扩展和图形扩展定义一个可扩展机制  
-  >+ 精化事件的组成和关联  
-  >+ 扩展人类交互的定义  
-  >+ 定义了一个编舞图模型  
+  > + 将针对所有BPMN元素的执行语义正式化  
+  > + 为过程模型扩展和图形扩展定义一个可扩展机制  
+  > + 精化事件的组成和关联  
+  > + 扩展人类交互的定义  
+  > + 定义了一个编舞图模型  
     
->本规范还解决了已知BPMN1.2中存在的矛盾和模糊的问题。  
+> 本规范还解决了已知BPMN1.2中存在的矛盾和模糊的问题。  
 	  
 BPMN is constrained to support only the concepts of modeling that are applicable to Business Processes. This means that other types of modeling done by organizations for business purposes is out of scope for BPMN. Therefore, the following are aspects that are out of the scope of this specification:  
     + Definition of organizational models and resources    + Modeling of functional breakdowns    + Data and information models    + Modeling of strategy    + Business rules models  Since these types of high-level modeling either directly or indirectly affects Business Processes, the relationships between BPMN and other high-level business modeling can be defined more formally as BPMN and other specifications are advanced.  
@@ -120,6 +120,35 @@ A Collaboration depicts the interactions between two or more business entities. 
 ![image](/images/An example of a Collaborative Process.png)   
 Figure 7.3 - An example of a Collaborative Process  
 >图7.3 一个协作流程的例子
+
+**Choreographies**  
+>编舞图  
+
+A self-contained Choreography (no Pools or Orchestration) is a definition of the expected behavior, basically a procedural contract, between interacting Participants. While a normal Process exists within a Pool, a Choreography exists between Pools (or Participants).  
+  >自包含编舞图（既不是泳池也不是管弦乐编曲）是预期行为的定义，基本来说是交互参与者之间的程序规约。当一个常规流程在泳池范围内时，一个编舞图在两泳池（或参与者）之间。  
+The Choreography looks similar to a private Business Process since it consists of a network of Activities, Events, and Gateways (see Figure 7.4). However, a Choreography is different in that the Activities are interactions that represent a set (1 or more) of Message exchanges, which involves two or more Participants. In addition, unlike a normal Process, there is no central controller, responsible entity or observer of the Process.  
+>因为编舞图是一张由活动、事件和网关组成的网（请见图7.4），因此看起来和私有业务流程相似。但是区别在于，编舞图中活动是两个或多个参与者之间发生的交互，代表一组（1或多）信息交换。另外，不同于常规流程，不存在中央控制器，责任实体以及流程观测者。  
+  
+![image](/images/An example of a Choreography.png)      
+
+Figure 7.4 - An example of a Choreography  
+
+>图7.4-一个编舞图的示例  
+
+**Conversations**  
+>对话  
+
+The Conversation diagram is a particular usage of and an informal description of a Collaboration diagram. However, the Pools of a Conversation usually do not contain a Process and a Choreography is usually not placed in between the Pools of a Conversation diagram. A Conversation is the logical relation of Message exchanges. The logical relation, in practice, often concerns a business object(s) of interest, e.g., “Order,” “Shipment and Delivery,” or “Invoice.”  
+>对话图是协作图的特殊应用和非正式描述。然而对话的泳池通常不包含流程并且一个编舞图通常不会放在对话图的两个泳池之间。一个对话是信息交换的逻辑关系。在实践中，逻辑关系常常涉及一个或多个兴趣业务对象，例如“订单”、“货运”，或者“发货单”。  
+  
+Message exchanges are related to each other and reflect distinct business scenarios. For example, in logistics, stock replenishments involve the following type scenarios: creation of sales orders; assignment of carriers for shipments combining different sales orders; crossing customs/quarantine; processing payment and investigating exceptions. Thus, a Conversation diagram, as shown in Figure 7.5, shows Conversations (as hexagons) between Participants (Pools). This provides a “bird’s eye” perspective of the different Conversations that relate to the domain.   
+>信息交换彼此关联并且反映不同的业务场景。例如，后勤中的库存补给涉及的典型场景，如下：创建销售订单；针对关联不同销售订单的出货单分配运输方式；处理付款和调查例外。因此一个对话图，如图7.5所示，展示了两个参与者（泳池）之间的对话（如六边形所示）。这样给出了和该领域有关的不同对话的鸟瞰图。  
+
+![image](/images/An example of a Conversation diagram.png)   
+
+Figure 7.5 - An example of a Conversation diagram  
+>图7.5-一个对话图的示例
+
 
 
 
